@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Contact & Feedback</title>
+
+    <meta name="description" content="Personal portfolio website - Contact and Feedback">
+    <meta name="author" content="Muhammad Nur Aiman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+            color: #1b2a4e;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #dbe8ff;
+            color: #1b2a4e;
+            padding-bottom: 1rem;
+        }
+
+        header img {
+            width: 10%;
+            height: auto;
+            display: block;
+        }
+
+        header h1 {
+            margin: 0.5rem 0 0.25rem 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0 0 0.5rem 0;
+        }
+
+        nav {
+            background-color: #c6ddff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 0.6rem;
+        }
+
+        nav a {
+            color: #1b2a4e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1.5rem 0 2.5rem 0;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: #ffffff;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            border-top: 4px solid #f0b37a;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #f0b37a;
+            padding-bottom: 0.3rem;
+            margin-top: 0;
+        }
+
+        form label {
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 0.4rem;
+            margin-top: 0.2rem;
+            border: 1px solid #cfd8ea;
+            border-radius: 4px;
+            background-color: #f9fbff;
+        }
+
+        form input[type="submit"] {
+            margin-top: 0.8rem;
+            padding: 0.5rem 1.2rem;
+            background-color: #f0b37a;
+            color: #1b2a4e;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #e29a50;
+        }
+
+        .back-top {
+            text-align: right;
+            margin-top: 0.5rem;
+        }
+
+        .back-top a {
+            font-size: 0.85rem;
+            color: #1b2a4e;
+        }
+
+        .back-top a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #dbe8ff;
+            color: #1b2a4e;
+            font-size: 0.85rem;
+            padding: 0.8rem 0;
+            margin-top: 1rem;
+        }
+
+        footer p {
+            margin: 0.2rem 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body id="top">
+
+<header>
+    <div class="container">
+        <img src="images/header-banner.png" alt="Header banner for my portfolio website">
+        <h1>Contact &amp; Feedback</h1>
+        <p>Get in touch or leave feedback about this website</p>
+    </div>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact & Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p>If you want to reach me, you can contact me via:</p>
+        <ul>
+            <li>Email (personal): <a href="mailto:aimanmarkam008@gmail.com">aimanmarkam008@gmail.com</a></li>
+            <li>Email (student): <a href="mailto:2024636086@student.uitm.edu.my">2024636086@student.uitm.edu.my</a></li>
+            <li>Phone: <a href="tel:+601118689168">+60 11-1868 9168</a></li>
+        </ul>
+
+        <p>
+            This website is created as part of my assignment and published as a simple HTML portfolio.
+        </p>
+    </section>
+
+    <section id="form">
+        <h2>Feedback Form</h2>
+        <p>Please leave simple feedback about this website.</p>
+
+        <form action="mailto:2024636086@student.uitm.edu.my" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Feedback / Comment:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <input type="submit" value="Send Feedback">
+</form>
+
+        <h3>Google Search Form (Example)</h3>
+        <form action="https://www.google.com/search" method="get" target="_blank">
+            <label for="q">Search on Google:</label>
+            <input type="text" id="q" name="q">
+            <input type="submit" value="Search">
+        </form>
+
+        <div class="back-top">
+            <a href="#top">Back to top ▲</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Muhammad Nur Aiman. All rights reserved.</p>
+        <p>Recommended browser: Latest Google Chrome / Microsoft Edge</p>
+        <p>Recommended resolution: 1366 x 768 or higher</p>
+        <p>Last updated: 23 November 2025</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Gallery</title>
+    <meta name="description" content="Image, audio, video and multimedia gallery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background: #f7f9fc;
+            color: #1b2a4e;
+        }
+
+        header {
+            background: #dbe8ff;
+            padding-bottom: .5rem;
+        }
+
+        header img {
+            width: 80px;
+        }
+
+        header h1 {
+            margin: .5rem 0;
+            font-size: 1.8rem;
+        }
+
+        nav {
+            background: #c6ddff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: .6rem 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 .5rem;
+        }
+
+        nav a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #1b2a4e;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section {
+            background: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            border-top: 4px solid #f0b37a;
+            margin: 1.8rem 0;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #f0b37a;
+            padding-bottom: 4px;
+            margin-top: 0;
+        }
+
+        /* ========= CSS-ONLY SLIDER ========= */
+
+        .slider {
+            position: relative;
+            max-width: 800px;
+            margin: 1rem auto;
+            border-radius: 6px;
+            border: 2px solid #e5e8ee;
+            overflow: hidden;
+            background: #000;
+        }
+
+        /* Hide radio buttons */
+        .slider input[type="radio"] {
+            display: none;
+        }
+
+        .slides {
+            position: relative;
+            height: 400px;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 0.6s ease-in-out;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Default: first slide visible */
+        #slide1:checked ~ .slides .s1,
+        #slide2:checked ~ .slides .s2,
+        #slide3:checked ~ .slides .s3,
+        #slide4:checked ~ .slides .s4,
+        #slide5:checked ~ .slides .s5,
+        #slide6:checked ~ .slides .s6 {
+            opacity: 1;
+        }
+
+        .navigation-dots {
+            text-align: center;
+            padding: 0.6rem 0 0.3rem 0;
+            background: rgba(0,0,0,0.4);
+        }
+
+        .navigation-dots label {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 0 4px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        /* Active dot colour */
+        #slide1:checked ~ .navigation-dots label[for="slide1"],
+        #slide2:checked ~ .navigation-dots label[for="slide2"],
+        #slide3:checked ~ .navigation-dots label[for="slide3"],
+        #slide4:checked ~ .navigation-dots label[for="slide4"],
+        #slide5:checked ~ .navigation-dots label[for="slide5"],
+        #slide6:checked ~ .navigation-dots label[for="slide6"] {
+            background: #f0b37a;
+        }
+
+        footer {
+            background: #dbe8ff;
+            padding: 1rem 0;
+            font-size: .85rem;
+        }
+
+        footer p {
+            text-align: center;
+            margin: .25rem 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <img src="images/header-banner.png" alt="Banner">
+        <h1>Gallery</h1>
+        <p>Images, audio, video and multimedia content</p>
+    </div>
+
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact & Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <!-- IMAGE SLIDER WITHOUT JAVASCRIPT -->
+    <section>
+        <h2>Image Gallery</h2>
+
+        <div class="slider">
+            <!-- Radio buttons to control slides -->
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <input type="radio" name="slider" id="slide6">
+
+            <!-- Slides -->
+            <div class="slides">
+                <div class="slide s1">
+                    <img src="images/images1.jpeg" alt="Image 1">
+                </div>
+                <div class="slide s2">
+                    <img src="images/images2.jpeg" alt="Image 2">
+                </div>
+                <div class="slide s3">
+                    <img src="images/images3.jpeg" alt="Image 3">
+                </div>
+                <div class="slide s4">
+                    <img src="images/images4.jpeg" alt="Image 4">
+                </div>
+                <div class="slide s5">
+                    <img src="images/images5.jpeg" alt="Image 5">
+                </div>
+                <div class="slide s6">
+                    <img src="images/images6.jpeg" alt="Image 6">
+                </div>
+            </div>
+
+            <!-- Dots navigation -->
+            <div class="navigation-dots">
+                <label for="slide1" title="Image 1"></label>
+                <label for="slide2" title="Image 2"></label>
+                <label for="slide3" title="Image 3"></label>
+                <label for="slide4" title="Image 4"></label>
+                <label for="slide5" title="Image 5"></label>
+                <label for="slide6" title="Image 6"></label>
+            </div>
+        </div>
+
+        <p>
+            Click the dots below the slider to change images.  
+        </p>
+    </section>
+
+    <!-- AUDIO -->
+    <section>
+        <h2>Audio Player</h2>
+        <audio controls>
+            <source src="audio/audiosample.mp4" type="audio/mpeg">
+            Your browser does not support audio playback.
+        </audio>
+        <p>Audio sample</p>
+    </section>
+
+    <!-- VIDEO -->
+    <section>
+        <h2>Video Player</h2>
+        <video width="100%" height="360" controls>
+            <source src="video/videosample.mp4" type="video/mp4">
+            Your browser does not support video playback.
+        </video>
+        <p>Video sample</p>
+    </section>
+
+    <!-- MULTIMEDIA OBJECT -->
+    <section>
+        <h2>YouTube Embed (Multimedia)</h2>
+        <iframe width="100%" height="380"
+        src="https://www.youtube.com/embed/nqKROwPsc7s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+</iframe>
+        <p>This is an example of embedded multimedia content using an iframe.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Muhammad Nur Aiman. All rights reserved.</p>
+    <p>Last updated: 23 November 2025</p>
+</footer>
+
+</body>
+</html>

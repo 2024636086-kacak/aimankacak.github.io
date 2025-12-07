@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio - Content</title>
+    <link rel="shortcut icon" href=favicon.ico" type="image/x-icon"
+    <meta name="description" content="Portfolio assignment website - Content page">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+            color: #1b2a4e;
+        }
+
+        header {
+            background: #dbe8ff;
+            padding-bottom: .5rem;
+        }
+
+        header img {
+            width: 80px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        nav {
+            background: #c6ddff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: .6rem 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 .6rem;
+        }
+
+        nav a {
+            font-weight: bold;
+            text-decoration: none;
+            color: #1b2a4e;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            background: #fff;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            border-top: 4px solid #f0b37a;
+            margin: 1.4rem 0;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #f0b37a;
+            padding-bottom: 4px;
+        }
+
+        footer {
+            background: #dbe8ff;
+            padding: 1rem 0;
+            font-size: .85rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            text-align: center;
+        }
+
+        .back-top {
+            margin-top: .8rem;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body id="top">
+
+<header>
+    <div class="container">
+        <img src="images/header-banner.png" alt="Banner">
+        <h1>Content Page</h1>
+        <p>Navigation, linking and HTML structure examples</p>
+    </div>
+
+    <nav>
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="#section-links">Section Link</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="contact.html">Contact & Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>
+            This page demonstrates required HTML concepts:
+            <strong>internal links, external links, and anchor links.</strong>
+        </p>
+        <p>
+            They help users navigate pages and sections effectively.
+        </p>
+    </section>
+
+    <section id="section-links">
+        <h2>Internal, External & Anchor Links</h2>
+
+        <h3>Internal Link (Same Website)</h3>
+        <p>
+            <a href="experience.html">Go to Experience page</a>
+        </p>
+
+        <h3>External Link (Different Website)</h3>
+        <p>
+            <a href="https://www.uitm.edu.my" target="_blank">
+                Visit UiTM Official Website
+            </a>
+        </p>
+
+        <h3>Anchor Link (Scroll to Section)</h3>
+        <p>
+            <a href="#bottom">Jump to Bottom</a>
+        </p>
+    </section>
+
+    <section>
+        <h2>Why This Matters</h2>
+        <p>
+            Linking is the backbone of user experience.
+            The web is literally a network of documents connected by hyperlinks.
+        </p>
+    </section>
+
+    <section id="bottom">
+        <h2>Bottom Section</h2>
+        <p>You successfully jumped to this anchor.</p>
+    </section>
+
+    <div class="back-top">
+        <a href="#top">Back to top ▲</a>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Muhammad Nur Aiman. All rights reserved.</p>
+    <p>Last updated: 23 November 2025</p>
+</footer>
+
+</body>
+</html>
